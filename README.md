@@ -1,4 +1,4 @@
-# # Akan Names
+# # Hero-Squad
 #### By **Mutsotso Fredrick Angose**
 ## Description
 
