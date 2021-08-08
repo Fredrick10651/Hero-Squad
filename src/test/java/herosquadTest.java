@@ -25,6 +25,20 @@ public class herosquadTest {
     }
 
     @Test
+    public void runherosquad_includeWeaknesses_String(){
+        herosquad testherosquad = new herosquad();
+        String expectedOutput = new String();
+        expectedOutput = "weaknesses";
+        assertEquals(expectedOutput, testherosquad.includeherosquad("weaknesses"));
+    }
+
+    @Test
+    public void runherosquad_enterAge_Integer(){
+        herosquad testherosquad =new herosquad();
+        Integer expectedOutput = new Integer(12);
+        expectedOutput = 12;
+        assertEquals(expectedOutput, testherosquad.enterherosquad(12));
+    }
 
 
 

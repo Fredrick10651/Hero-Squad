@@ -26,4 +26,18 @@ public class herosquad<expectedOutput> {
         expectedOutput = "special powers";
         return expectedOutput;
     }
+
+    public String includeherosquad(String weaknesses) {
+        String expectedOutput = new String();
+        expectedOutput = "weaknesses";
+        return expectedOutput;
+
+    }
+
+    public Integer enterherosquad(int i) {
+        Integer expectedOutput = new Integer(12);
+        expectedOutput =12;
+        return expectedOutput;
+
+    }
 }
