@@ -40,4 +40,12 @@ public class herosquad<expectedOutput> {
         return expectedOutput;
 
     }
+
+    public Integer maxherosquad(int i) {
+        Integer expectedOutput = new Integer(4);
+        int maxSquadSize = 4;
+        expectedOutput =4;
+        return expectedOutput;
+
+    }
 }

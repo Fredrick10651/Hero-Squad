@@ -40,6 +40,15 @@ public class herosquadTest {
         assertEquals(expectedOutput, testherosquad.enterherosquad(12));
     }
 
+    @Test
+    public void runherosquad_maxSquadSize_Interger(){
+        herosquad testherosquad = new herosquad();
+        Integer expectedOutput = new Integer(4);
+        expectedOutput = 4;
+        assertEquals(expectedOutput, testherosquad.maxherosquad(4));
+
+    }
+
 
 
 
