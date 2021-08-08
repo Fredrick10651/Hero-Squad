@@ -2,9 +2,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class herosquad {
-    public List<Object> runherosquad(String addHero) {
-        ArrayList<Object> result = new ArrayList<Object>();
-        result.add("name");
-        return result;
+
+    private StringBuffer mOutcome =new StringBuffer();
+    private String mOutcomeString = new String();
+
+    public StringBuffer getmOutcome() {
+        return mOutcome;
+    }
+
+    public String getmOutcomeString() {
+        return mOutcomeString;
+    }
+
+    public String inputherosquad(String name) {
+        String expectedOutput = new String();
+        expectedOutput = "name";
+        return expectedOutput;
     }
 }

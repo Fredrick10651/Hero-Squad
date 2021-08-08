@@ -8,12 +8,13 @@ import static org.junit.Assert.*;
 public class herosquadTest {
 
     @Test
-    public void runherosquad_addHeroName_ArrayList(){
+    public void runherosquad_inputHeroName_String(){
         herosquad testherosquad = new herosquad();
-        List<Object> expectedOutput = new ArrayList<Object>();
-        expectedOutput.add("name");
-        assertEquals(expectedOutput, testherosquad.runherosquad("name"));
-
-
+        String expectedOutput = new String();
+        expectedOutput = "name";
+        assertEquals(expectedOutput, testherosquad.inputherosquad("name"));
     }
+
+
+
 }
