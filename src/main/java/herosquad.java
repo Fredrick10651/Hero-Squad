@@ -48,4 +48,16 @@ public class herosquad<expectedOutput> {
         return expectedOutput;
 
     }
+
+    public String insertherosquad(String squad_name) {
+        String expectedOutput = new String();
+        expectedOutput = "squad name";
+        return expectedOutput;
+    }
+
+    public String listherosquad(String causes) {
+        String expectedOutput = new String();
+        expectedOutput = "causes";
+        return expectedOutput;
+    }
 }

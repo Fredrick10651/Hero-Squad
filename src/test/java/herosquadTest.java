@@ -41,12 +41,28 @@ public class herosquadTest {
     }
 
     @Test
-    public void runherosquad_maxSquadSize_Interger(){
+    public void runherosquad_maxSquadSize_Integer(){
         herosquad testherosquad = new herosquad();
         Integer expectedOutput = new Integer(4);
         expectedOutput = 4;
         assertEquals(expectedOutput, testherosquad.maxherosquad(4));
 
+    }
+
+    @Test
+    public void runherosquad_insertSquadName_String(){
+        herosquad testherosquad = new herosquad();
+        String expectedOutput = new String();
+        expectedOutput ="squad name";
+        assertEquals(expectedOutput, testherosquad.insertherosquad("squad name"));
+    }
+
+    @Test
+    public void runherosquad_listCausesSquadIsFighting_String(){
+        herosquad testherosquad = new herosquad();
+        String expectedOutput = new String();
+        expectedOutput ="causes";
+        assertEquals(expectedOutput, testherosquad.listherosquad("causes"));
     }
 
 
