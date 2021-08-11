@@ -5,46 +5,46 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-class SquadTest {
+public class squadTest {
 
     @Test
     public void newSquad_instantiatesCorrectly_true() {
-        Squad newSquad = Squad.buildNewSquad();
-        assertTrue(newSquad instanceof Squad);
+        squad newSquad = squad.buildNewSquad();
+        assertTrue(newSquad instanceof squad);
     }
 
     @Test
     public void newSquad_getTag_String() {
-        Squad newSquad = Squad.buildNewSquad();
+        squad newSquad = squad.buildNewSquad();
         assertEquals("Avengers", newSquad.getSquadTag());
     }
 
     @Test
     public void newSquad_getTotal_Integer() {
-        Squad newSquad = Squad.buildNewSquad();
+        squad newSquad = squad.buildNewSquad();
         assertEquals(5, newSquad.getSquadTotal());
     }
 
     @Test
     public void newSquad_getMotive_String() {
-        Squad newSquad = Squad.buildNewSquad();
+        squad newSquad =squad.buildNewSquad();
         assertEquals("Drug trafficking", newSquad.getMotive());
     }
 
     @Test
     public void newSquad_getInstances_true() {
-        Squad newSquad = Squad.buildNewSquad();
-        Squad newChar = Squad.buildNewSquad();
-        assertTrue(Squad.getInstances().contains(newSquad));
-        assertTrue(Squad.getInstances().contains(newChar));
+        squad newSquad = squad.buildNewSquad();
+        squad newChar = squad.buildNewSquad();
+        assertTrue(squad.getInstances().contains(newSquad));
+        assertTrue(squad.getInstances().contains(newChar));
     }
 
     @Test
     public void  newSquad_getSquadMembers_List() {
-        Squad newSquad = Squad.buildNewSquad();
-        Hero newHero = Hero.buildNewHero();
-        Hero newHero1 = Hero.buildNewHero1();
+        squad newSquad = squad.buildNewSquad();
+        hero newHero = hero.buildNewHero();
+        hero newHero1 = hero.buildNewHero1();
         newSquad.setSquadMembers(newHero);
-        assertEquals("Batman", newSquad.getSquadMembers().get(0).getName());
+        assertEquals("Superman", newSquad.getSquadMembers().get(0).getName());
     }
 }

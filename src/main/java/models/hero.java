@@ -2,16 +2,16 @@ package models;
 
 import java.util.ArrayList;
 
-class Hero {
+public class hero {
 
     private String name;
     private int age;
     private String power;
     private String weakness;
     private int id;
-    private static ArrayList<Hero> instances = new ArrayList<>();
+    private static ArrayList<hero> instances = new ArrayList<>();
 
-    public Hero (String name, Integer age, String power, String weakness) {
+    public hero(String name, Integer age, String power, String weakness) {
         this.name = name;
         this.age = age;
         this.power = power;
@@ -39,11 +39,11 @@ class Hero {
         return this.weakness;
     }
 
-    public static ArrayList<Hero> getInstances() {
+    public static ArrayList<hero> getInstances() {
         return instances;
     }
 
-    public static ArrayList<Hero> getAllInstances() {
+    public static ArrayList<hero> getAllInstances() {
 
         return instances;
     }
@@ -56,28 +56,28 @@ class Hero {
         return id;
     }
 
-    public static Hero findById(int id) {
+    public static hero findById(int id) {
         return instances.get(id-1);
     }
 
-    public static Hero buildNewHero() {
-        return new Hero("Superman", 45, "Lasers", "Water");
+    public static hero buildNewHero() {
+        return new hero("Superman", 45, "Lasers", "Water");
     }
 
-    public static Hero buildNewHero1() {
-        return new Hero("Spiderman", 25, "Web", "Venom");
+    public static hero buildNewHero1() {
+        return new hero("Spiderman", 25, "Web", "Venom");
     }
 
-    public static Hero buildNewHero2() {
-        return new Hero("Batman", 27, "Judo", "Women");
+    public static hero buildNewHero2() {
+        return new hero("Batman", 27, "Judo", "Women");
     }
 
-    public static Hero buildNewHero3() {
-        return new Hero("Iron man", 36, "Robot", "Power");
+    public static hero buildNewHero3() {
+        return new hero("Iron man", 36, "Robot", "Power");
     }
 
-    public static Hero buildNewHero4() {
-        return new Hero("Flash", 17, "Speed", "Height");
+    public static hero buildNewHero4() {
+        return new hero("Flash", 17, "Speed", "Height");
     }
 
 }

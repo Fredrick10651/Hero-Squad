@@ -4,11 +4,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class HeroTest {
+public class heroTest {
 
     @Test
     public void newHero_instantiatesCorrectly_true() {
-        Hero newHero = Hero.buildNewHero();
+        hero newHero = hero.buildNewHero();
         assertTrue(true);
     }
 
@@ -17,35 +17,36 @@ class HeroTest {
 
     @Test
     public void newHero_getName_String() {
-        Hero newHero = Hero.buildNewHero();
+        hero newHero = hero.buildNewHero();
         assertEquals("Superman", newHero.getName());
     }
 
     @Test
     public void newHero_getAge_Integer() {
-        Hero newHero = Hero.buildNewHero();
+        hero newHero = hero.buildNewHero();
         assertEquals(45, newHero.getAge());
     }
 
     @Test
     public void newHero_getPower_String() {
-        Hero newHero = Hero.buildNewHero();
-        assertEquals("Iron man", newHero.getPower());
+        hero newHero = hero.buildNewHero();
+        assertEquals("Lasers", newHero.getPower());
     }
 
     @Test
     public void newHero_getWeakness_String() {
-        Hero newHero = Hero.buildNewHero();
-        assertEquals("Arrow", newHero.getWeakness());
+        hero newHero = hero.buildNewHero();
+        assertEquals("Water", newHero.getWeakness());
     }
 
     @Test
     public void newHero_getInstances_true() {
-        Hero newHero = Hero.buildNewHero();
-        Hero newChar = Hero.buildNewHero();
-        Hero newChar1 = Hero.buildNewHero();
-        Hero newChar2 = Hero.buildNewHero();
-        Hero newChar3 = Hero.buildNewHero();
-
+//        hero = hero.buildNewHero();
+        hero newChar = hero.buildNewHero();
+        hero newChar1 = hero.buildNewHero();
+        hero newChar2 = hero.buildNewHero();
+        hero newChar3 = hero.buildNewHero();
+//        assertEquals(5, newChar.newChar());
     }
 }
+

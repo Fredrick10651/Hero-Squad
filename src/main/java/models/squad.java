@@ -3,17 +3,17 @@ package models;
 
 import java.util.ArrayList;
 
-class Squad {
+public class squad {
 
     private int squadId;
     private String squadTag;
     private int squadTotal;
     private String Motive;
 
-    private ArrayList<Hero> squadMembers = new ArrayList<>();
-    private static ArrayList<Squad> instances = new ArrayList<>();
+    private ArrayList<hero> squadMembers = new ArrayList<>();
+    private static ArrayList<squad> instances = new ArrayList<>();
 
-    public Squad(String tag, int total, String motive ) {
+    public squad(String tag, int total, String motive ) {
         squadTag = tag;
         squadTotal = total;
         this.Motive = motive;
@@ -25,7 +25,7 @@ class Squad {
     public int getSquadId() {
         return squadId;
     }
-    public static Squad findBySquadId(int id) {
+    public static squad findBySquadId(int id) {
         return instances.get(id-1);
     }
 
@@ -41,15 +41,15 @@ class Squad {
         return this.Motive;
     }
 
-    public  static ArrayList<Squad>getInstances() {
+    public  static ArrayList<squad>getInstances() {
         return instances;
     }
 
-    public ArrayList<Hero> getSquadMembers() {
+    public ArrayList<hero> getSquadMembers() {
         return squadMembers;
     }
 
-    public void setSquadMembers(Hero newHero) {
+    public void setSquadMembers(hero newHero) {
         squadMembers.add(newHero);
     }
 
@@ -61,16 +61,16 @@ class Squad {
         getSquadMembers().clear();
     }
 
-    public static Squad buildNewSquad() {
-        return new Squad("Avengers", 5, "Drug trafficking");
+    public static squad buildNewSquad() {
+        return new squad("Avengers", 5, "Drug trafficking");
     }
 
-    public static Squad buildNewSquad1() {
-        return new Squad("Justice League", 5, "Protect Humans");
+    public static squad buildNewSquad1() {
+        return new squad("Justice League", 5, "Protect Humans");
     }
 
-    public static Squad buildNewSquad2() {
-        return new Squad("Liberty Saviours", 3, "Defenders of the Space");
+    public static squad buildNewSquad2() {
+        return new squad("Liberty Saviours", 3, "Defenders of the Space");
     }
 
 }

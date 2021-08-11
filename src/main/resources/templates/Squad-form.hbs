@@ -1,0 +1,18 @@
+{{#partial "content"}}
+    <br>
+    <hr>
+    <div class="container-fluid hero-pg"> <br> <br> <br>
+        <div class="container squad">
+            <form class="form" action="/new/squad" method="post"> <br>
+                <h1 class="text-danger">Create Squad</h1>
+                <div class="sqForm">
+                    <input type="text" placeholder="Squad's name" name="squadName" required> <br> <br>
+                    <input type="number" placeholder="Squad size" name="Total" required> <br> <br>
+                    <input type="text" placeholder="Motive" name="Motive" required> <br> <br>
+                    <button class="btn btn-warning" type="submit">Create Squad</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}
