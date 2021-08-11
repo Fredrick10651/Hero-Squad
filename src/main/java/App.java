@@ -33,20 +33,20 @@ public class App {
         squad.buildNewSquad();
         squad.buildNewSquad1();
 
-//        main page
+
         get("/", (request, response) -> {
                     Map<String, Object> model = new HashMap<String, Object>();
                     return new ModelAndView(new HashMap(), "main.hbs");
                 }, new HandlebarsTemplateEngine()
         );
 
-//        Hero form for filling
+
         get("/Hero-form",(req, res) ->{
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "templates/Hero-form.hbs");
         }, new HandlebarsTemplateEngine());
 
-//The Heroes page, where all are displayed
+
         get("/Hero", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             ArrayList<hero> hero = models.hero.getAllInstances();
@@ -69,7 +69,7 @@ public class App {
 
 
 
-//Form for registering a squad
+
         get("/Squad-form",(req, res) ->{
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "templates/Squad-form.hbs");
@@ -101,4 +101,5 @@ public class App {
 
 //
     }
+
 }
