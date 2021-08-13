@@ -22,7 +22,6 @@ public class hero {
 
 
 
-
     public String getName() {
         return this.name;
     }

@@ -8,7 +8,7 @@ public class heroTest {
 
     @Test
     public void newHero_instantiatesCorrectly_true() {
-        hero newHero = hero.buildNewHero();
+        hero newhero = hero.buildNewHero();
         assertTrue(true);
     }
 
@@ -41,12 +41,7 @@ public class heroTest {
 
     @Test
     public void newHero_getInstances_true() {
-//        hero = hero.buildNewHero();
-        hero newChar = hero.buildNewHero();
-        hero newChar1 = hero.buildNewHero();
-        hero newChar2 = hero.buildNewHero();
-        hero newChar3 = hero.buildNewHero();
-//        assertEquals(5, newChar.newChar());
+
     }
 }
 
