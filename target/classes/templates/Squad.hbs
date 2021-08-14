@@ -1,0 +1,44 @@
+{{#partial "content"}}
+
+
+
+    <div class="container-fluid universe"> <br> <hr>
+        <div class="container outerspace">
+            <h2 class="text-danger">Choose Squad Members</h2>
+            {{#each hero}}
+                <p>Name: {{name}}</p>
+                <p>Super power: {{ power }}</p>
+                <a>Add To Squad</a>
+            {{/each}}
+            <a class="btn btn-warning" href="/Squad-form">Create Squad</a>
+            <br><br>
+            {{#if squads}}
+                <h2 class="text-danger">SQUADS</h2>
+                {{#each squads}}
+                    <div class="mySquad">
+                        <h3 class="text-warning text-uppercase">{{ squadTag }} </h3>
+                        <p class="text-white">Objectives: {{motive}}</p>
+                        <p class="text-white">Squad Size: {{ squadTotal }}</p>
+                        <br>
+                        <h3 class="text-danger">Avengers</h3>
+                        <button class="btn btn-primary" >Select Heroes</button>
+                        {{#each squadMembers}}
+                            <div class="members">
+                                <h5>Name: {{this.name}}</h5>
+                                <h5>Power: {{power}}</h5>
+                                <Button class="btn btn-warning">Delete</Button>
+                            </div>
+                        {{/each}}
+                    </div>
+                {{/each}}
+            {{else}}
+                <h2 class="text-warning">Create your squad!</h2>
+            {{/if}}
+        </div>
+    </div>
+
+{{/partial}}
+{{#partial "footer"}}
+
+{{/partial}}
+{{> layout.hbs}}

@@ -1,0 +1,20 @@
+{{#partial "content"}}
+    <br>
+    <hr>
+    <div class="container-fluid hero-pg"> <br> <br> <br>
+        <div class="container hero">
+            <form class="form" action="/new/hero" method="post">
+                <h1 class="text-warning text-center">Create Hero</h1>
+                <div class="indent">
+                    <input type="text" placeholder="Hero'S name" name="name" required> <br> <br>
+                    <input type="number" placeholder="Hero's age" name="age" required> <br> <br>
+                    <input type="text" placeholder="Hero's special powers" name="power" required> <br> <br>
+                    <input type="text" placeholder="Hero's weakness" name="weakness" required> <br> <br>
+
+                    <button class="btn btn-danger btn9" type="submit">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}
