@@ -2,7 +2,7 @@
 #### By **Mutsotso Fredrick Angose**
 ## Description
 
- This is the link to my [live site]()
+ This is the link to my [live site](https://hero-squad-pash.herokuapp.com/)
 
  It's an app that allow users to recruit a balanced group of superheroes to fight a particular pandemic or vice according to their superpowers.
 ## Setup/Installation Requirements
